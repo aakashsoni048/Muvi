@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="../assets/css/style.css" rel="stylesheet"> -->
+  <link href="assets/css/custom-style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="fixed-top">
+    <div class="d-flex align-items-center">
+      <a href="home.html" class="logo mr-auto">
+        <img style="padding: 35px;" src="assets/images/Muvi.png" alt="Logo">
+      </a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+  <!-- ======= section start ======= -->
+  <div class="section checkout-page-bg ">
+    <div class="container-fluid">
+      <div class="row" >
+          <h4>Checkout</h4>
+          <form class="checkout-from col-md-12" action="">
+            <div class="row">
+
+            <div class="col-md-4">
+              <p for="Card Holder Name">Card Holder Name</p>
+              <input type="text" placeholder="Full Name as displayed on card">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Card Number">Card Number</p>
+              <input type="text" placeholder="Enter card number">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Card Expiry">Card Expiry</p>
+              <input type="text" placeholder="MM/YY">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Card CVV">Card CVV</p>
+              <input type="text" placeholder="Security Code">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Card Number">Address 1</p>
+              <input  type="text" placeholder="Address 2 (optional)">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Address 2">Address 2</p>
+              <input type="text" placeholder="Enter card number">
+            </div>
+
+            <div class="col-md-4">
+              <p for="State">State</p>
+            <input type="text" placeholder="State">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Country">Country</p>
+            <input  type="text" placeholder="Country">
+            </div>
+
+            <div class="col-md-4">
+              <p for="Zip Code">Zip Code</p>
+            <input  type="text" placeholder="Zip Code">
+            </div>
+            
+            <div class="col-md-12">
+              <input style="width: 1%;" type="checkbox" id="term-checkbox" name="" value="">
+              <p for="term" style="display: inline-block;"> I have a bike</p><br>
+            </div>
+
+            <div class="col-md-12" style="    padding: 0;">
+              <button class="cancel-btn-register">
+                <a href="#">Cancel</a>
+              </button>
+              <button class="yellow-btn">
+                <a href="#">Pay</a>
+              </button>
+          </div>
+
+          </div>
+          </form>
+          
+         
+          
+      </div>
+    </div>
+  </div>
+  <!-- End Sction -->
+
+  </main>
+  <!-- End Main -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

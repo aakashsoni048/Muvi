@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Accessible Responsive HTML5 Video Player</title>
+  <meta name="description" content="Custom HTML5 video controls and WebVTT captions." />
+  <meta name="author" content="Dennis Lembree, PayPal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- PX-VIDEO CSS -->
+  <link href="assets/css/px-video.css" rel="stylesheet">
+  </style>
+
+</head>
+
+<body style="background: #000000;">
+
+  <div id="wrapper">
+
+    <div class="px-video-container" id="myvid">
+      <div class="px-video-img-captions-container">
+        
+        <div class="px-video-captions hide"></div>
+        <div class="px-video-controls"></div>
+        <div class="px-video-wrapper">
+          <video poster="assets/media/poster_PayPal_Austin2.jpg" class="px-video" controls>
+      			<!-- video files -->
+      			<source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.mp4" type="video/mp4" />
+      			<source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.webm" type="video/webm" />
+
+      			<!-- text track file -->
+      			<track kind="captions" label="English captions" src="assets/media/captions_PayPal_Austin_en.vtt" srclang="en" default />
+
+      			<!-- fallback for browsers that don't support the video element -->
+      			<div>
+      				<a href="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.mp4">
+      					<img src="assets/media/poster_PayPal_Austin2.jpg" width="640" height="360" alt="download video" />
+      				</a>
+      			</div>
+      		</video>
+        </div>
+      </div>
+      <!-- end container for captions and video -->
+      
+    </div>
+    <!-- end video container -->
+
+  </div>
+  <!-- end page wrapper container -->
+  <script src="assets/js/strings.js"></script>
+  <script src="assets/js/px-video.js"></script>
+
+  <script>
+  // Initialize
+new InitPxVideo({
+  videoId: "myvid",
+  captionsOnDefault: true,
+  seekInterval: 20,
+  videoTitle: "PayPal Austin promo",
+  debug: true
+});
+</script>
+
+</body>
+
+</html>
