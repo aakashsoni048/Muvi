@@ -98,6 +98,87 @@ display: block;
 }
 /* header icon click menu end */
 
+/* Search box content start */
+.search-box {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 170px;
+  width: 297px;
+  height: 43px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 99999;
+  border-radius: 0px;
+  padding: 10px;
+  background: #2F2F2F;
+  border: 1px solid rgba(123, 123, 123, 0.18);
+  box-sizing: border-box;
+}
+.search-input {
+  background: #2F2F2F;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #B5ADAD;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 0px ​10px 36px 20px;
+  padding: 0px 20px;
+  width: 100%;
+}
+.search_box_search_icon {
+  margin: 8px 0px 0px 5px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  width: 6%;
+  cursor: pointer;
+}
+.search_box_cancel{
+  margin: 8px 0px 0px 5px;
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  width: 6%;
+  cursor: pointer;
+}
+/* .search-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 46px;
+  min-width: 25rem;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transform: translate(0, 70px);
+  -webkit-transform: translate(0, 70px);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+}
+.iq-search-bar .search-input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px 5px 40px;
+  border: none;
+  border-radius: 0;
+  color: var(--iq-white);
+  background: var(--iq-bg1);
+}
+.iq-search-bar .searchbox .search-link {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  font-size: 16px;
+} */
+/* Search box contrnt end */
 
 /* Sign in page css start
 --------------------------------*/
@@ -1779,13 +1860,13 @@ progress {
 /* Contact page css start */
 .contact-form-div {
   width: 570px;
-  height: 739px;
+  height: auto;
   background: #FFFFFF;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
   padding: 34px 62px 0px 62px;
   margin: 15px;
 }
-.contact-form-div p{
+.msg-txt{
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1806,6 +1887,7 @@ progress {
   color: #000000;
   border: none;
   outline: none;
+  margin: 0px 0px 20px 0px;
 }
 .contact-btn a{
   color: #000000;
@@ -1841,6 +1923,15 @@ progress {
   color: #FFFFFF;
   padding-bottom: 27px;
 }
+.contact-page-lable{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 40px 0px 14px 0px;
+  margin: 0px;
+}
 .contact-form-div input[type="text"] {
   width: 100%;
   border-bottom: 1px solid #E5E5E5;
@@ -1851,7 +1942,7 @@ progress {
   font-size: 16px;
   line-height: 22px;
   color: #A7A7A7;
-  padding: 51px 0px 10px 0px;
+  padding: 0px ​0px 10px 0p;
   outline: none;
 }
 
@@ -2153,7 +2244,7 @@ progress {
   width: 98%;
 }
 .input-half-cst {
-  width: 48%;
+  width: 96%;
 }
 .register-bg h6{
   font-weight: 600;
@@ -2194,6 +2285,15 @@ progress {
   text-align: right;
   color: #B5ADAD;
   margin: 0px 5px 0px 0px;
+}
+.register-from-lable {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding: 10px 0px 14px 0px;
+  margin: 0px;
 }
   /* accordian start */
   .register-boxes:hover{

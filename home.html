@@ -46,6 +46,7 @@
 
 <body>
 
+  
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="d-flex align-items-center">
@@ -59,7 +60,7 @@
           <li><a href="home.html">TV Series</a></li>
           <li class="header-margin-left"><a href="home.html">My List</a></li>
           <li>
-            <a href="#"><img style="margin: 7px 0px 0px 0px;" src="assets/images/imageedit_182_5953944197.png" alt="Icon"></a>
+            <a href="#"><img onclick="Search_box()" style="margin: 7px 0px 0px 0px;" src="assets/images/imageedit_182_5953944197.png" alt="Icon"></a>
           </li>
           <li>
             <a href="#"><img src="assets/images/Vector.png" alt="Icon"  class="img-fluid"></a>
@@ -73,6 +74,16 @@
     </div>
   </header>
   <!-- End Header -->
+
+  <div id="Search_box" class="search-box">
+    <form action="#" class="searchbox">
+      <div class="form-group">
+         <input type="text" class="text search-input" placeholder="type here to search...">
+         <img class="search_box_search_icon" src="assets/images/imageedit_182_5953944197.png" alt="Icon">
+         <img class="search_box_cancel" onclick="Search_box()" src="assets/images/cancel-icon.png" alt="Icon">
+      </div>
+   </form>
+  </div>
 
   <div id="myDropdown" class="dropdown-content">
     <a href="payment.html">Manage Profile</a>
@@ -1106,6 +1117,10 @@
   <script>
     function Menu() {
       document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function Search_box() {
+      document.getElementById("Search_box").classList.toggle("show");
     }
 
     // slider script first start
